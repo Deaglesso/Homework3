@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+
+<body>
+    <header>
+        <h1>Event Registration Form</h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" value="" minlength="3"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"> <br>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone">
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Event details</legend>
+                <label for="event-name">Event name:</label>
+                <input type="text" id="event-name" name="event-name" value="" minlength="3"><br>
+                <label for="event-date">Event date:</label>
+                <input type="date" id="event-date" name="event-date" required value="2018-07-22" min="2018-01-01"
+                    max="2018-12-31" />
+                <br>
+                <label for="event-location">Event location:</label>
+                <input type="text" id="event-location" name="event-location" value="" minlength="3"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Ticket selection</legend>
+                <label for="ticket-type"> Choose Ticket Type:</label> <br>
+                <input type="radio" id="Standart" name="ticket-type" value="Standart">
+                <label for="Standart">Standart</label><br>
+                <input type="radio" id="VIP" name="ticket-type" value="VIP">
+                <label for="VIP">VIP</label><br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required min="0" max="100"> <br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Dietary Preferences</legend>
+                <label for="dietary">Do you have any dietary preferences?</label> <br>
+                <input type="checkbox" id="diet1" name="dietary" value="vegetarian">
+                <label for="diet1">Vegetarian</label><br>
+                <input type="checkbox" id="diet2" name="dietary" value="vegan">
+                <label for="diet2">Vegan</label><br>
+                <input type="checkbox" id="diet3" name="dietary" value="gluten-free">
+                <label for="diet3"> Gluten-Free</label><br>
+            </fieldset>
+            <label for="add-comments">Additional Comments:</label> <br>
+            <textarea name="add-comments" id="add-comments"></textarea> <br>
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">I agree to the terms and conditions</label> <br>
+            <input type="submit" value="Register">
+            <input type="reset">
+        </form>
+    </main>
+</body>
+
+</html>
